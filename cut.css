@@ -1,0 +1,38 @@
+.search-form {
+  position: relative;
+  padding: 20px;
+  width: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.input-field {
+  background-color: var(--light-gray);
+}
+
+.input-field,
+.btn-search {
+  width: 90%;
+  border: 1px solid gray;
+  height: 35px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#pricemin,
+#pricemax,
+#metersmin,
+#metersmax {
+  width: 45%;
+}
+
+#pricemin,
+#metersmin {
+  border-right: none;
+}
+
+#pricemax,
+#metersmax {
+  margin-left: -7px;
+}

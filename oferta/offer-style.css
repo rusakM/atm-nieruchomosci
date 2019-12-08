@@ -1,0 +1,142 @@
+:root {
+  --light-gray: #f2f2f2;
+  --gold: #f2cb05;
+  --gray: #f2f2f2;
+}
+
+header {
+  border-bottom: 2px solid black;
+  background-color: #d1d1d1;
+}
+
+.nav-item:hover {
+  background-color: transparent;
+}
+
+.main-photo {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+}
+
+.title-bar {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  background-color: var(--gold);
+}
+
+.back-btn {
+  border: 2px solid black;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  color: gray;
+  border: 2px solid gray;
+}
+
+.offer-title {
+  margin-left: 20px;
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.properties {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+  width: 80%;
+  border-right: 5px solid var(--gold);
+  border-bottom: 5px solid var(--gold);
+  margin-left: 10%;
+  padding-bottom: 20px;
+}
+
+.props-list {
+  list-style-type: none;
+}
+
+.prop-item {
+  padding: 5px;
+}
+
+.price-container > p {
+  color: gray;
+}
+
+.price-container > h3 {
+  padding-top: 20px;
+}
+
+.description {
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 40px;
+  border-left: 5px solid var(--gold);
+  border-bottom: 5px solid var(--gold);
+}
+
+.offer-heading,
+.offer-description {
+  padding: 15px;
+}
+
+.insertion-date {
+  margin: 30px;
+  text-align: center;
+}
+
+.photos {
+  width: 80%;
+  border-right: 5px solid var(--gold);
+  margin-left: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.photos-container {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 50%;
+}
+
+.photo > img {
+  max-width: 90%;
+}
+
+footer {
+  background-color: var(--gold);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+footer > div > p {
+  margin-left: 30px;
+}
