@@ -128,11 +128,11 @@
 <body>
     <header>
         <div class="logo">
-                <img src="../assets/logo.png" alt="logo" class="logo-img">
+                <img src="../assets/logo.png" alt="logo" class="logo-img" onclick="goToHome();">
             </div>
             <div class="menu-bar">
                 <p class="nav-item search-link" onclick="goToHome();"></i>Strona główna</p>
-                <p class="nav-item search-link" onclick="goToContact();">Kontakt</p>
+                <p class="nav-item search-link" onclick="scroller('contact');">Kontakt</p>
                 <a href="http://localhost/atm-nieruchomosci" id="link-main-page" hidden></a>
                 <a href="http://localhost/atm-nieruchomosci" id="link-contact" hidden></a>
         </div>
@@ -281,7 +281,7 @@
                         $offer = $offer.'right" ';
                     }
                         
-                    $offer = $offer.'onclick="openOffer('.$item['offerId'].');">
+                    $offer = $offer.'onclick="openOfferLink('.$item['offerId'].');">
                     <a href="http://localhost/atm-nieruchomosci/oferta/?'.$params_to_offer.'id='.$item['offerId'].'" hidden id="link-'.$item['offerId'].'"></a>
                     <img src="'.$photo.'" class="offer-img">
                     <div class="offer-description">
@@ -316,19 +316,15 @@
             ?>
         </div>
     </section>
-    <section class="contact" id="contact">
-        <h1 class="section-heading">Kontakt</h1>
-        <div class="contact-container">
-            <div class="contact-data">
-                <p>Jeśli jesteś zainteresowany naszą ofertą, lub masz jakieś pytania - skontaktuj się z nami!</p>
-                <h5>ATM NIERUCHOMOŚCI</h5>
-                <p><i class="fas fa-phone-alt"></i> Telefon: 506 568 042</p>
-                <p><i class="far fa-envelope-open"></i> Email: some@mail.com</p>
-                <p><i class="fas fa-map-marked-alt"></i> Adres: 08-400 Garwolin</p>
-            </div>
-            <img src="../assets/map.png" alt="Mapa dojazu" class="map-img">
+    <footer class="contact" id="contact">
+        <h5>ATM NIERUCHOMOŚCI</h5>
+        <div>
+            <p><i class="fas fa-phone-alt"></i> Telefon: 506 568 042</p>
+            <p><i class="far fa-envelope-open"></i> Email: nieruchomosciatm@gmail.com</p>
+            <p><i class="fas fa-map-marked-alt"></i> Adres: 08-400 Garwolin</p>
         </div>
-    </section>
+        <p>Projekt i wykonanie: Mateusz Rusak</p>
+    </footer>
 </body>
 </html>
 <script src="../script.js"></script>

@@ -48,6 +48,7 @@ header {
   margin-bottom: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+  cursor: pointer;
 }
 
 .right {
@@ -87,4 +88,25 @@ header {
 .description {
   list-style-type: none;
   margin-top: 10px;
+}
+
+footer {
+  background-color: var(--gold);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+footer > div > p {
+  margin-left: 30px;
 }

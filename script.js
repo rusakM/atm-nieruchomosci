@@ -185,6 +185,28 @@ const selectLocalization = event => {
 
 //funkctions for hrefs
 
+const defaultLink = "http://localhost/atm-nieruchomosci";
+
 const goBack = () => {
   document.getElementById("back-link").click();
+};
+
+const goToSearch = () => {
+  document.getElementById("searchLink").click();
+};
+
+const scroller = id => {
+  document.getElementById(`${id}`).scrollIntoView();
+};
+
+const goToHome = () => {
+  let link = document.createElement("a");
+  link.href = defaultLink;
+  link.click();
+};
+
+const openOffer = id => {
+  let offer = document.createElement("a");
+  offer.href = `${defaultLink}/oferta/?id=${id}`;
+  offer.click();
 };

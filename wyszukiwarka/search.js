@@ -1,11 +1,3 @@
-const goToHome = () => {
-  document.getElementById("link-main-page").click();
-};
-
-const goToContact = () => {
-  document.getElementById("link-contact").click();
-};
-
-const openOffer = id => {
+const openOfferLink = id => {
   document.getElementById(`link-${id}`).click();
 };

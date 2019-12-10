@@ -26,9 +26,6 @@
             $params = $params.''.$key.'='.$val.'&';
         }
     }
-
-    //$date = date("Y/m/d H:i", time());
-
 ?>
 
 <!DOCTYPE html>
@@ -58,11 +55,11 @@
 <body>
     <header>
         <div class="logo">
-                <img src="../assets/logo.png" alt="logo" class="logo-img">
+                <img src="../assets/logo.png" alt="logo" class="logo-img" onclick="goToHome();">
             </div>
             <div class="menu-bar">
                 <p class="nav-item search-link" onclick="goToHome();"></i>Strona główna</p>
-                <p class="nav-item search-link" onclick="goToContact();">Kontakt</p>
+                <p class="nav-item search-link" onclick="scroller('contact');">Kontakt</p>
                 <a href="http://localhost/atm-nieruchomosci" id="link-main-page" hidden></a>
                 <a href="http://localhost/atm-nieruchomosci" id="link-contact" hidden></a>
         </div>
@@ -87,7 +84,7 @@
         ?>
         <span class="back-btn" onclick="goBack();">
         <i class="fas fa-chevron-left"></i>
-         Powrót do poprzedniej strony
+         Powrót do wyszukiwarki
         </span>
         <h1 class="offer-title">
         <?php
@@ -211,11 +208,11 @@
         ?>
         </div>
     </section>
-    <footer>
+    <footer id="contact">
         <h5>ATM NIERUCHOMOŚCI</h5>
         <div>
             <p><i class="fas fa-phone-alt"></i> Telefon: 506 568 042</p>
-            <p><i class="far fa-envelope-open"></i> Email: some@mail.com</p>
+            <p><i class="far fa-envelope-open"></i> Email: nieruchomosciatm@gmail.com</p>
             <p><i class="fas fa-map-marked-alt"></i> Adres: 08-400 Garwolin</p>
         </div>
         <p>Projekt i wykonanie: Mateusz Rusak</p>

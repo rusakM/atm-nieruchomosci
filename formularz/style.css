@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  height: 60px;
+  border-bottom: 2px solid;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 22px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+header > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header > ul > li > a {
+  margin: 15px;
+}
+
+.photos-container {
+  margin-bottom: 40px;
+}
+
+.photo-preview,
+.appended-photo,
+.preview-img {
+  width: 65%;
+}
