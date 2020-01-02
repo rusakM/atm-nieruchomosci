@@ -1,7 +1,7 @@
 <?php
     require_once('../assets/connect.php');
     $con = mysqli_connect($host, $usr, $pass, $db);
-    $location = $_SERVER['DOCUMENT_ROOT'].'/atm-nieruchomosci/uploads';
+    $location = $_SERVER['DOCUMENT_ROOT'].'/uploads';
     if(isset($_GET['id'])) {
         $offer_photos_q = 'SELECT photoId FROM photos WHERE offerId='.$_GET['id'];
         $offer_photos = mysqli_query($con, $offer_photos_q);
@@ -14,5 +14,5 @@
     }
 
     mysqli_close($con);
-    header('Location: http://localhost/atm-nieruchomosci/formularz');
+    header('Location: http://nieruchomosciatm.pl/formularz');
 ?>

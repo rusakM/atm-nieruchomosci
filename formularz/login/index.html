@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="ATM nieruchomości - sprzedaż, wynajem, zarządzanie najmem i ubezpieczenie nieruchomości. Garwolin, Warszawa, Lublin"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <title>Logowanie do nieruchomosciatm.pl</title>
+    <style>
+      #password {
+        width: 30%;
+      }
+      @media (max-width: 500px) {
+        #password {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fluid-container jumbotron">
+      <h1 class="text-primary">Logowanie do nieruchomosciatm.pl</h1>
+      <br />
+      <p>Wpisz poniżej hasło aby przejść dalej:</p>
+      <form
+        action="http://localhost/atm-nieruchomosci/formularz/login.php"
+        method="post"
+      >
+        <input
+          type="password"
+          name="password"
+          class="form-control"
+          id="password"
+          required
+        />
+        <input type="submit" class="btn btn-primary" value="Prześlij" />
+      </form>
+      <br />
+      <a href="http://localhost/atm-nieruchomosci">Strona główna</a>
+    </div>
+  </body>
+</html>

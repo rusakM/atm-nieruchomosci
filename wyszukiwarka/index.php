@@ -131,7 +131,7 @@
                 <img src="../assets/logo.png" alt="logo" class="logo-img" onclick="goToHome();">
             </div>
             <div class="menu-bar">
-                <p class="nav-item search-link" onclick="goToHome();"></i>Strona główna</p>
+                <p class="nav-item search-link" onclick="goToHome();">Strona główna</p>
                 <p class="nav-item search-link" onclick="scroller('contact');">Kontakt</p>
                 <a href="http://localhost/atm-nieruchomosci" id="link-main-page" hidden></a>
                 <a href="http://localhost/atm-nieruchomosci" id="link-contact" hidden></a>
@@ -220,7 +220,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="search-form-row">
+            <div class="search-form-row input-fields">
                 <input
                     type="text"
                     placeholder="Cena od"

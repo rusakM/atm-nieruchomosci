@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /formularz/
+Disallow: /wyszukiwarka/
+
+
+User-agent: Googlebot-Image
+Disallow: /

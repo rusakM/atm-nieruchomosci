@@ -140,3 +140,93 @@ footer > div {
 footer > div > p {
   margin-left: 30px;
 }
+
+.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.gallery > div {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+
+#photo-preview {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
+  top: 50%;
+}
+
+#btn-close {
+  font-size: 48px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+#btn-prev {
+  font-size: 48px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+#btn-next {
+  font-size: 48px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+#btn-close:hover,
+#btn-prev:hover,
+#btn-next:hover {
+  color: #444;
+}
+
+@media (max-width: 450px) {
+  .properties {
+    margin-left: 0;
+    padding-left: 15px;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .description {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .photos {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .photos-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .photo {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}

@@ -202,7 +202,7 @@
         <?php
         if(count($photos) > 0) {
             foreach($photos as $photo) {
-                echo '<div class="photo"><img src="http://localhost/atm-nieruchomosci/uploads/'.$photo[0].'.jpg" onclick="openPhoto(event);"></div>';
+                echo '<div class="photo"><img src="http://localhost/atm-nieruchomosci/uploads/'.$photo[0].'.jpg" onclick="showGallery(event);" class="photo-img"></div>';
             }
         }
         ?>
@@ -217,6 +217,15 @@
         </div>
         <p>Projekt i wykonanie: Mateusz Rusak</p>
     </footer>
+    <aside class="gallery" id="gallery">
+        <div id="gallery-container">
+            <img src="" id="photo-preview">
+            <i class="fas fa-times" id="btn-close" onclick="galleryClose();"></i>
+            <i class="fas fa-chevron-left" id="btn-prev" onclick="prevImage();"></i>
+            <i class="fas fa-chevron-right" id="btn-next" onclick="nextImage();"></i>
+        </div>
+    </aside>
 </body>
 </html>
 <script src="../script.js"></script>
+<script src="gallery.js"></script>

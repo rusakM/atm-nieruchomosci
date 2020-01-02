@@ -42,7 +42,7 @@ header {
 
 .left-menu {
   position: absolute;
-  top: 100px;
+  top: 120px;
   right: 0px;
   width: 250px;
   height: 75vh;
@@ -435,4 +435,146 @@ main page
 
 .map-img {
   max-width: 40%;
+}
+
+.cookies-alert {
+  display: flex;
+  position: relative;
+  background-color: var(--gray);
+  height: 10vh;
+  justify-content: center;
+  justify-content: space-between;
+  z-index: 6;
+  align-items: center;
+}
+
+.cookies-alert > p {
+  margin-left: 15px;
+}
+
+.cookies-btn {
+  font-size: 26px;
+  margin: 10px;
+}
+
+.cookies-btn:hover {
+  color: #555;
+}
+
+@media (max-width: 450px) {
+  .cookies-alert {
+    height: 20vh;
+  }
+
+  header {
+    height: 65px;
+    z-index: 4;
+  }
+
+  .left-menu {
+    top: 0;
+    padding-top: 100px;
+  }
+
+  .logo {
+    margin-left: 5px;
+    height: 60px;
+  }
+
+  .search-link {
+    margin-right: 5px;
+  }
+
+  .search-form-container {
+    width: 75%;
+    margin-left: 15px;
+  }
+
+  .slogan {
+    top: 75%;
+  }
+
+  .background-img {
+    max-width: 75%;
+    left: 15px;
+    border: none;
+    top: 30%;
+  }
+
+  .search-form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .search-form-row {
+    margin: 15px;
+    flex-direction: column;
+  }
+
+  .custom-select {
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  .input-fields {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .input-field {
+    width: 45%;
+  }
+
+  .latest-offers-container {
+    width: 90%;
+    margin-left: 5%;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .latest-offer-container {
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  .service-container {
+    width: auto;
+  }
+
+  .service-left,
+  .service-right {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .service-img {
+    max-width: 100%;
+  }
+
+  .service-description {
+    padding: 10px;
+  }
+
+  .map-img {
+    display: none;
+  }
+
+  .contact-container {
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .contact-data {
+    text-align: left;
+  }
+
+  .contact-data > p {
+    font-size: 16px;
+  }
+
+  #company {
+    text-align: center;
+  }
 }

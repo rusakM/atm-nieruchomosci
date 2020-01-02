@@ -110,3 +110,49 @@ footer > div {
 footer > div > p {
   margin-left: 30px;
 }
+
+@media (max-width: 450px) {
+  #pricemin,
+  #pricemax,
+  #metersmin,
+  #metersmax {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+
+  .input-fields {
+    margin-top: 5px;
+  }
+
+  .results-header {
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .offer-container {
+    padding-top: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .left,
+  .right {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .offer-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .offer-description {
+    width: 100%;
+  }
+
+  .offer-title {
+    left: 5px;
+    font-size: 22px;
+    margin-top: 5px;
+  }
+}

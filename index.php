@@ -30,12 +30,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ATM Nieruchomości - sprzedaż, wynajem, zarządzanie najmem i ubezpieczenie nieruchomości. Garwolin i okolice.">
+    <meta name="keywords" content="ATM, nieruchomości garwolin, ATM nieruchomości, atm, nieruchomosci, garwolin">
+    <meta name="robots" content="index, follow">
+    
     <title>ATM nieruchomości</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" typ="image/x-icon" href="assets/favicon/icon.ico">
     <script src="https://kit.fontawesome.com/f2d0422ee2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <aside class="cookies-alert" id="cookies-alert">
+        <p class="cookie">Ta strona wykorzystuje pliki cookie aby świadczyć usługi na najwyższym poziomie. Pliki te są usuwane po zamknięciu okan przeglądarki. Dalsze korzystanie ze strony oznacza ich akceptację.</p>
+        <span class="cookies-btn" id="cookie-accept" onclick="confirmCookies();"><i class="fas fa-times"></i></span>
+    </aside>
     <header>
         <div class="logo">
             <img src="assets/logo.png" alt="logo" class="logo-img" onclick="goToHome();">
@@ -146,7 +154,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="search-form-row">
+            <div class="search-form-row input-fields">
                 <input
                     type="text"
                     placeholder="Cena od"
@@ -162,7 +170,7 @@
                     id="pricemax"
                 />
             </div>
-            <div class="search-form-row">
+            <div class="search-form-row input-fields">
                 <input
                     type="text"
                     placeholder="m&sup2; od"
@@ -180,6 +188,46 @@
             </div>
             <input type="submit" value="Szukaj" class="btn-search" />
         </form>
+    </section>
+    <section class="services" id="services">
+        <h1 class="section-heading">Nasze usługi:</h1>
+        <div class="service-container left" id="estate-sell-container">
+            <div class="service-left">
+                <img src="assets/services-img/sell.jpg" alt="Sprzedaż" class="service-img left-img">
+                <div class="service-description">
+                    <h3>Sprzedaż nieruchomości</h3>
+                    <p>Skutecznie poprowadzimy cię przez proces sprzedaży nieruchomości. Przygotujemy profesjonalną ofertę sprzedaży, będziemy czuwać nad negocjacjami i zadbamy o to by twoje mieszkanie znalazło nowego właściciela.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-container right">
+            <div class="service-right">
+            <img src="assets/services-img/rent.jpg" alt="Sprzedaż" class="service-img">
+                <div class="service-description">
+                    <h3>Wynajem nieruchomości</h3>
+                    <p>Specjalizujemy się w wynajmie różnych typów nieruchomości: mieszkań, domów, lokali użytkowych. Bezpiecznie przeprowadzimy cię przez proces wynajmu, od szukania sprawdzonych najemców, poprzez prezentację nieruchomości, aż po podpisanie umowy. </p>
+                </div>
+            </div>
+        </div>
+        <div class="service-container left">
+            <div class="service-left">
+            <img src="assets/services-img/insurance.jpg" alt="Sprzedaż" class="service-img">
+                <div class="service-description">
+                    <h3>Zarządzanie najmem</h3>
+                    <p>Nasza firma zajmuje się również kompleksową obsługą najmu mieszkania. Stworzymy dla ciebie ofertę, znajdziemy lokatorów, oraz zapewnimy nadzór nad mieszkaniem i wszystkim co się w nim znajduje. Usługa zarządzania najmem obejmuje również kontrolę nad płatnościami i windykacją.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-container right">
+            <div class="service-right">
+            <img src="assets/services-img/insurance.jpg" alt="Sprzedaż" class="service-img">
+                <div class="service-description">
+                    <h3>Ubezpieczenie nieruchomości</h3>
+                    <p>Zajmujemy się również ubezpieczeniem nieruchomości. Przygotujemy dla ciebie indywidualną ofertę zapewniając szeroki zakres ochrony, by jak najlepiej zabezpieczyć twoją posiadłość.</p>
+                </div>
+            </div>
+            </div>
+        </div>
     </section>
     <section class="latest-offers" id="latest-offers">
         <h1 class="section-heading">Najnowsze oferty:</h1>
@@ -238,55 +286,17 @@
             ?>
         </div>
     </section>
-    <section class="services" id="services">
-        <h1 class="section-heading">Nasze usługi:</h1>
-        <div class="service-container left" id="estate-sell-container">
-            <div class="service-left">
-                <img src="assets/services-img/sell.jpg" alt="Sprzedaż" class="service-img left-img">
-                <div class="service-description">
-                    <h3>Sprzedaż nieruchomości</h3>
-                    <p>Skutecznie poprowadzimy cię przez proces sprzedaży nieruchomości. Przygotujemy profesjonalną ofertę sprzedaży, będziemy czuwać nad negocjacjami i zadbamy o to by twoje mieszkanie znalazło nowego właściciela.</p>
-                </div>
-            </div>
-        </div>
-        <div class="service-container right">
-            <div class="service-right">
-            <img src="assets/services-img/rent.jpg" alt="Sprzedaż" class="service-img">
-                <div class="service-description">
-                    <h3>Wynajem nieruchomości</h3>
-                    <p>Specjalizujemy się w wynajmie różnych typów nieruchomości: mieszkań, domów, lokali użytkowych. Bezpiecznie przeprowadzimy cię przez proces wynajmu, od szukania sprawdzonych najemców, poprzez prezentację nieruchomości, aż po podpisanie umowy. </p>
-                </div>
-            </div>
-        </div>
-        <div class="service-container left">
-            <div class="service-left">
-            <img src="assets/services-img/insurance.jpg" alt="Sprzedaż" class="service-img">
-                <div class="service-description">
-                    <h3>Zarządzanie najmem</h3>
-                    <p>Nasza firma zajmuje się również kompleksową obsługą najmu mieszkania. Stworzymy dla ciebie ofertę, znajdziemy lokatorów, oraz zapewnimy nadzór nad mieszkaniem i wszystkim co się w nim znajduje. Usługa zarządzania najmem obejmuje również kontrolę nad płatnościami i windykacją.</p>
-                </div>
-            </div>
-        </div>
-        <div class="service-container right">
-            <div class="service-right">
-            <img src="assets/services-img/insurance.jpg" alt="Sprzedaż" class="service-img">
-                <div class="service-description">
-                    <h3>Ubezpieczenie nieruchomości</h3>
-                    <p>Zajmujemy się również ubezpieczeniem nieruchomości. Przygotujemy dla ciebie indywidualną ofertę zapewniając szeroki zakres ochrony, by jak najlepiej zabezpieczyć twoją posiadłość.</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
+    
     <section class="contact" id="contact">
         <h1 class="section-heading">Kontakt</h1>
         <div class="contact-container">
             <div class="contact-data">
                 <p>Jeśli jesteś zainteresowany naszą ofertą, lub masz jakieś pytania - skontaktuj się z nami!</p>
-                <h5>ATM NIERUCHOMOŚCI</h5>
+                <h5 id="company">ATM NIERUCHOMOŚCI</h5>
                 <p><i class="fas fa-phone-alt"></i> Telefon: 506 568 042</p>
                 <p><i class="far fa-envelope-open"></i> Email: nieruchomosciatm@gmail.com</p>
                 <p><i class="fas fa-map-marked-alt"></i> Adres: 08-400 Garwolin</p>
+                <p>Projekt i wykonanie: Mateusz Rusak</p>
             </div>
             <img src="assets/map.png" alt="Mapa dojazu" class="map-img">
         </div>

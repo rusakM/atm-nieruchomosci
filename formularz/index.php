@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['login'])) {
+    header('Location: http://localhost/atm-nieruchomosci/formularz/login');
+}
+
 require_once('../assets/connect.php');
 $con = mysqli_connect($host, $usr, $pass, $db);
 
@@ -309,7 +315,7 @@ function edit_offer($con, $id) {
         <ul>
             <li><a href="http://localhost/atm-nieruchomosci/formularz">Lista ofert</a>|</li>
             <li><a href="http://localhost/atm-nieruchomosci/formularz/?strona=dodaj">Dodaj ofertę</a>|</li>
-            <li><a href="">Wyloguj</a></li>
+            <li><a href="http://localhost/atm-nieruchomosci/formularz/logout.php">Wyloguj</a></li>
         </ul>
     </header>
     <section class="container">

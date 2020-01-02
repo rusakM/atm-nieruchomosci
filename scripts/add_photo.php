@@ -2,10 +2,10 @@
     require_once('../assets/connect.php');
     $con = mysqli_connect($host, $usr, $pass, $db);
 
-    $img_location = $_SERVER['DOCUMENT_ROOT'].'/atm-nieruchomosci/uploads';
+    $img_location = $_SERVER['DOCUMENT_ROOT'].'/uploads';
 
     if(!isset($_GET['id'])) {
-        header('Location: http://localhost/atm-nieruchomosci/formularz');
+        header('Location: http://nieruchomosciatm.pl/formularz');
     }
 
 
@@ -29,6 +29,6 @@
     }
 
     mysqli_close($con);
-    header('Location: http://localhost/atm-nieruchomosci/formularz/?strona=edytuj&id='.$_GET['id']);
+    header('Location: http://nieruchomosciatm.pl/formularz/?strona=edytuj&id='.$_GET['id']);
     
 ?>

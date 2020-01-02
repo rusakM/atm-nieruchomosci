@@ -3,7 +3,7 @@ require_once('../assets/connect.php');
 $con = mysqli_connect($host, $usr, $pass, $db);
 
 if(!isset($_GET['id'])) {
-    header('Location: http://localhost/atm-nieruchomosci/formularz');
+    header('Location: http://nieruchomosciatm.pl/formularz');
 }
 
 $fields = [];
@@ -27,6 +27,6 @@ foreach($_POST as $key => $val) {
 
 mysqli_close($con);
 
-header('Location: http://localhost/atm-nieruchomosci/formularz/?strona=edytuj&id='.$_GET['id']);
+header('Location: http://nieruchomosciatm.pl/formularz/?strona=edytuj&id='.$_GET['id']);
 
 ?>
