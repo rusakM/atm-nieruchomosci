@@ -28,6 +28,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   z-index: 2;
+  margin-top: -2px;
+  border-bottom: 2px solid #555;
 }
 
 .logo {
@@ -129,6 +131,8 @@ main page
   height: 100%;
   margin-left: 30px;
   background-color: var(--gold);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 /* 
@@ -268,7 +272,7 @@ main page
   margin-top: 30px;
 }
 .background-img {
-  max-width: 65%;
+  max-width: 55%;
   max-height: 60vh;
   position: absolute;
   top: 50%;
@@ -349,6 +353,7 @@ main page
   position: relative;
   justify-content: center;
   flex-direction: column;
+  margin-top: 10%;
 }
 
 .service-container {
@@ -435,6 +440,28 @@ main page
 
 .map-img {
   max-width: 40%;
+}
+
+.telephone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.telephone > p {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.telephone > ul {
+  list-style-type: none;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
 }
 
 .cookies-alert {
@@ -576,5 +603,10 @@ main page
 
   #company {
     text-align: center;
+  }
+
+  .telephone {
+    justify-content: flex-start;
+    margin-left: 5px;
   }
 }

@@ -211,9 +211,9 @@
     <footer id="contact">
         <h5>ATM NIERUCHOMOŚCI</h5>
         <div>
-            <p><i class="fas fa-phone-alt"></i> Telefon: 506 568 042</p>
+            <p><i class="fas fa-phone-alt"></i> Telefon: 507 766 665</p>
             <p><i class="far fa-envelope-open"></i> Email: nieruchomosciatm@gmail.com</p>
-            <p><i class="fas fa-map-marked-alt"></i> Adres: 08-400 Garwolin</p>
+            <!-- <p><i class="fas fa-map-marked-alt"></i> Adres: 08-400 Garwolin</p> -->
         </div>
         <p>Projekt i wykonanie: Mateusz Rusak</p>
     </footer>

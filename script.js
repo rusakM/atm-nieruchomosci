@@ -11,25 +11,6 @@ const switchMenuBar = () => {
 };
 
 /**
- * cookies alert
- *
- */
-
-const confirmCookies = () => {
-  document.getElementById("cookies-alert").style.display = "none";
-  document.cookie = "cookie=close";
-};
-
-const autoCloseCookies = () => {
-  if (
-    document.cookie.split(";").filter(item => item.includes("cookie=close"))
-      .length
-  ) {
-    confirmCookies();
-  }
-};
-
-/**
  *  custom selects
  */
 
